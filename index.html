@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Bookshelf</title>
+    <meta name="description" content="Help and frequently asked questions for Bookshelf, the classroom library app for iPhone and iPad.">
+    <style>
+        :root {
+            --paper: #FFF8EC;
+            --card: #FFFFFF;
+            --ink: #1D1B2F;
+            --ink-muted: #5E5A72;
+            --line: #E9E1D2;
+            --soft: #F6EEDF;
+            --accent: #3FB5A5;
+            --link: #1F7F73;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --paper: #1D1B2F;
+                --card: #2A2840;
+                --ink: #F6EEDF;
+                --ink-muted: #B9B3C9;
+                --line: #3B3854;
+                --soft: #34314C;
+                --link: #6FD3C5;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: ui-rounded, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background: var(--paper);
+            min-height: 100vh;
+            padding: 20px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        .stripe {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 24px;
+        }
+
+        .stripe span {
+            height: 8px;
+            flex: 1;
+            border-radius: 4px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 900;
+            line-height: 1.15;
+        }
+
+        .subtitle {
+            color: var(--ink-muted);
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            font-weight: 800;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        a {
+            color: var(--link);
+        }
+
+        .contact-box {
+            background: var(--soft);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .contact-box a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            padding: 20px;
+            border-radius: 14px;
+            color: #1D1B2F;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 8px;
+            font-size: 1.25em;
+            font-weight: 800;
+        }
+
+        .scan { background: #8FD9CE; }
+        .topics { background: #F6A9A7; }
+        .bins { background: #F2C14E; }
+        .labels { background: #A9DBAB; }
+
+        .faq-item {
+            margin-bottom: 28px;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            color: var(--ink-muted);
+            padding-left: 20px;
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            color: var(--ink-muted);
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 28px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .faq-answer {
+                padding-left: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stripe" aria-hidden="true">
+            <span style="background:#EF6F6C"></span>
+            <span style="background:#F2C14E"></span>
+            <span style="background:#7CC47F"></span>
+            <span style="background:#3FB5A5"></span>
+            <span style="background:#5B8DEF"></span>
+        </div>
+        <h1>Bookshelf Support</h1>
+        <p class="subtitle">Your classroom library, scanned, sorted and labeled</p>
+
+        <h2>Need Help?</h2>
+        <div class="contact-box">
+            <p>Questions, feedback or something not working? Get in touch:</p>
+            <p style="margin-top: 15px;">
+                <strong>Email:</strong> <a href="mailto:dsimpsonseeds@gmail.com">dsimpsonseeds@gmail.com</a>
+            </p>
+        </div>
+
+        <h2>About the App</h2>
+        <p>Bookshelf helps teachers organize a classroom library. Scan the barcode on each book and it's added with its cover, author and description, then sort your books into bins that match your real shelves. It runs on iPhone and iPad (iOS 18 or later), and your library syncs between them through your own iCloud account.</p>
+
+        <div class="features">
+            <div class="feature-card scan">
+                <h3>Scan</h3>
+                <p>Point the camera at a barcode and keep going. Books are looked up in the background while you scan the next one.</p>
+            </div>
+            <div class="feature-card topics">
+                <h3>Topics</h3>
+                <p>Each book gets suggested topics and a reader stage, from Picture Book to Young Adult. Change them in a tap.</p>
+            </div>
+            <div class="feature-card bins">
+                <h3>Bins</h3>
+                <p>Make a bin for each shelf. Give it a topic or level rule and new books suggest the right bin.</p>
+            </div>
+            <div class="feature-card labels">
+                <h3>Labels</h3>
+                <p>Print book and bin labels, or export your library as a spreadsheet.</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I add books?</div>
+            <div class="faq-answer">
+                <p>Tap <strong>Scan books</strong> and point the camera at the barcode on the back cover. If the camera can't read it, tap the keyboard button and type the ISBN. For a book with no barcode, tap <strong>+</strong> in the Library and enter its details by hand.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">A book wasn't found. What now?</div>
+            <div class="faq-answer">
+                <p>It's still saved. A banner at the top of the Library shows how many books need attention: tap <strong>Show</strong> to see them, or <strong>Retry</strong> to look them up again (helpful if you were offline). Some books, especially older or self-published ones, aren't in the public catalogues; open the book and fill in the title and author yourself.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Where do topics and reader stages come from?</div>
+            <div class="faq-answer">
+                <p>They're suggestions based on public catalogue information from Open Library and Google Books, so they won't always be right. Open a book and tap <strong>Edit</strong> next to Topics to change them; your choices are never overwritten. Books added before topics were available can be updated with <strong>Settings &rarr; Re-tag library&hellip;</strong>.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do bins work?</div>
+            <div class="faq-answer">
+                <p>A bin is one of your classroom shelves or baskets. Create one in the Bins tab and, if you like, give it a rule: a set of topics or a range of reading levels. Books that match the rule suggest that bin when you scan them or open them, and you accept with a tap. If your library already has topics, <strong>Create topic bins</strong> makes a bin for each one.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do I have to enter reading levels?</div>
+            <div class="faq-answer">
+                <p>No. Levels are optional. If you use them, you can record Guided Reading (F&amp;P), DRA, Lexile, ATOS and more. Enter one and the app suggests the others as estimates, shown with a dashed outline. In Settings you can choose which system the Library sorts by, or hide estimates entirely.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I print labels?</div>
+            <div class="faq-answer">
+                <p>Tap the share button in the Library (or <strong>Export</strong> on iPad), choose <strong>Book labels &middot; Avery 5160</strong>, <strong>Book labels &middot; Avery 22806</strong> or <strong>Bin labels</strong>, then <strong>Create File</strong>. You'll get a PDF to print or save. When printing, choose actual size (100%) so the labels line up with the sheet. To label only some books, search or filter the Library first.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">My books aren't syncing between my devices.</div>
+            <div class="faq-answer">
+                <p>Make sure both devices are signed into the same Apple Account with iCloud turned on. <strong>Settings</strong> in the app shows the sync status. If your iCloud storage is full, books keep saving on the device but can't sync until you free up space or upgrade your iCloud plan. New changes can take a minute to appear on the other device.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">It says Google Books' daily limit is reached.</div>
+            <div class="faq-answer">
+                <p>Google Books limits how many lookups the app can make each day. Until the limit resets, usually the next day, books are looked up on Open Library only, so a few may be missing a description or need attention. Everything else keeps working.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is my data private?</div>
+            <div class="faq-answer">
+                <p>Yes. There's no account, no ads and no tracking. Your library is stored on your device and in your own private iCloud, which we can't see. The only thing that leaves your device is a book's ISBN, to look it up. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">I found a bug. How do I report it?</div>
+            <div class="faq-answer">
+                <p>Please email <a href="mailto:dsimpsonseeds@gmail.com">dsimpsonseeds@gmail.com</a> with what happened, what you expected, and your device and iOS version. A screenshot helps a lot. Thank you!</p>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p style="margin-top: 10px;">&copy; 2026 Donovan Simpson. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
